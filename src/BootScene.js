@@ -6,7 +6,9 @@ class BootScene extends Phaser.Scene {
     }
 
     preload () {
-        this.load.spritesheet('knight', 'assets/images/knight.png', {frameWidth: 16, frameHeight: 34})
+        this.load.image('debug-grid', 'assets/images/debug-grid-1920x1920.png')
+        this.load.atlas('knight', 'assets/knight.png', 'assets/knight.json')
+        // this.load.atlas('knight', 'assets/knight_2.png', 'assets/knight_2.json')
     }
 
     create () {

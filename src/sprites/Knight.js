@@ -3,45 +3,68 @@ export default class Knight extends Phaser.GameObjects.Sprite {
         super(config.scene, config.x, config.y, config.key)
         config.scene.physics.world.enable(this)
         config.scene.add.existing(this)
-        this.acceleration = 400
+        this.acceleration = 600
         this.body.maxVelocity.x = 100
         this.body.maxVelocity.y = 100
+        this.body.collideWorldBounds = true
+        this.anim = 'resting'
+        this.anims.play(this.anim)
+        console.log(this);
+        // this.anchor.setTo(0.5, 0.5)
     }
 
     update (keys, time, delta) {
-        console.log(this.body)
+        this.move(keys)
+    }
+
+    // Move knight function
+    move (keys) {
+        this.moveX(0)
+        this.moveY(0)
+
+        this.anim = 'resting'
 
         let input = {
-            left: keys.left && keys.left.isDown,
-            right: keys.right && keys.right.isDown,
-            down: keys.down && keys.down.isDown,
-            top: keys.up && keys.up.isDown,
+            left: keys.left.isDown,
+            right: keys.right.isDown,
+            down: keys.down.isDown,
+            top: keys.up.isDown
         }
 
         if (input.left) {
-            this.run(-this.acceleration)
+            this.moveX(-this.acceleration)
+            this.flipX = true
+            // this.anim = 'run-left'
+            this.anim = 'walking'
         } else if (input.right) {
-            this.run(this.acceleration)
-        } else {
-            this.body.setVelocityX(0)
-            this.run(0)
+            this.moveX(this.acceleration)
+            this.flipX = false
+            // this.anim = 'run-right'
+            this.anim = 'walking'
         }
 
         if (input.top) {
-            this.runY(-this.acceleration)
+            this.moveY(-this.acceleration)
+            // this.anim = 'run-up'
+            this.anim = 'walking'
         } else if (input.down) {
-            this.runY(this.acceleration)
-        } else {
-            this.body.setVelocityY(0)
-            this.runY(0)
+            // this.anim = 'run-down'
+            this.anim = 'walking'
+            this.moveY(this.acceleration)
+        }
+
+        if (this.anims.currentAnim.key !== this.anim) {
+            this.anims.play(this.anim)
         }
     }
 
-    run (vel) {
-        this.body.setVelocityX(vel)
+    // Move knight in the X axis
+    moveX (vel) {
+        this.body.velocity.x = vel
     }
 
-    runY (vel) {
-        this.body.setVelocityY(vel)
+    // Move knight in the Y axis
+    moveY (vel) {
+        this.body.velocity.y = vel
     }
 }

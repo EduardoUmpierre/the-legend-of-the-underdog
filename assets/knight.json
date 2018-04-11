@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "idle_1.png",
+	"frame": {"x":0,"y":0,"w":18,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":34},
+	"sourceSize": {"w":18,"h":34}
+},
+{
+	"filename": "idle_2.png",
+	"frame": {"x":18,"y":0,"w":18,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":34},
+	"sourceSize": {"w":18,"h":34}
+},
+{
+	"filename": "walking_1.png",
+	"frame": {"x":36,"y":0,"w":16,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":34},
+	"sourceSize": {"w":16,"h":34}
+},
+{
+	"filename": "walking_2.png",
+	"frame": {"x":52,"y":0,"w":16,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":34},
+	"sourceSize": {"w":16,"h":34}
+},
+{
+	"filename": "walking_3.png",
+	"frame": {"x":68,"y":0,"w":15,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":34},
+	"sourceSize": {"w":15,"h":34}
+},
+{
+	"filename": "walking_4.png",
+	"frame": {"x":83,"y":0,"w":15,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":34},
+	"sourceSize": {"w":15,"h":34}
+},
+{
+	"filename": "walking_5.png",
+	"frame": {"x":98,"y":0,"w":15,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":36},
+	"sourceSize": {"w":15,"h":36}
+},
+{
+	"filename": "walking_6.png",
+	"frame": {"x":113,"y":0,"w":17,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+	"sourceSize": {"w":17,"h":34}
+},
+{
+	"filename": "walking_7.png",
+	"frame": {"x":130,"y":0,"w":18,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":34},
+	"sourceSize": {"w":18,"h":34}
+},
+{
+	"filename": "walking_8.png",
+	"frame": {"x":148,"y":0,"w":18,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":36},
+	"sourceSize": {"w":18,"h":36}
+},
+{
+	"filename": "walking_9.png",
+	"frame": {"x":166,"y":0,"w":17,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":36},
+	"sourceSize": {"w":17,"h":36}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "knight.png",
+	"format": "RGBA8888",
+	"size": {"w":183,"h":36},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a76bca9ba898d65a1792616c78abda0d:c6c16e4bc365de9d483f6c9ca8a29c07:775abec68cea152a8c833d779d2191cb$"
+}
+}

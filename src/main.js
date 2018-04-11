@@ -1,23 +1,23 @@
-import 'phaser';
-import BootScene from './BootScene';
-import GameScene from './GameScene';
+import 'phaser'
+import BootScene from './BootScene'
+import GameScene from './GameScene'
 
 let config = {
-    type: Phaser.WEBGL,
+    type: Phaser.AUTO,
     parent: 'content',
-    width: 400,
-    height: 240,
-    scaleMode: 0, // Phaser.ScaleManager.EXACT_FIT,
+    width: 800,
+    height: 600,
     physics: {
         default: 'arcade',
         arcade: {
-            debug: true
+            debug: false
         }
     },
     scene: [
         BootScene,
         GameScene
     ]
-};
+}
 
-let game = new Phaser.Game(config);
+let game = new Phaser.Game(config)
+console.log(game)
